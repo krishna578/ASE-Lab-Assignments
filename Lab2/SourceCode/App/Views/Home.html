@@ -1,0 +1,129 @@
+
+<div class="left">
+
+<table class = "table">
+<tr>
+
+<td> <b>Enter the Source: </b> <input type="text" ng-model = "Source" id ="Source" class="input">  </td>    
+    
+    
+    
+<td> <b>Enter the Destination: </b><input type="text" ng-model = "Destination" id = "Destination" class="input">
+    <input type= "button" value ="Get Directions" ng-click="GetDirections()">
+       </td>      
+     
+    
+</tr>
+
+</table>
+
+    
+    <div id="Map" style="width:850px;height:480px;">
+    </div>
+
+</div>
+<div class="right"  id="Weather">
+
+  
+    
+    <table class="table table striped">
+    
+        <tr>
+    <td >
+   <b>Source City :</b>      
+    </td>  
+    <td>
+    {{Src_City_Name}}     
+    </td>  
+    </tr>
+        <tr>
+    <td>
+ <b>Temperature :  </b>      
+    </td>  
+    <td>
+    {{Src_City_Temp}} &#8457     
+    </td>  
+    </tr>
+        
+        <tr>
+    <td>
+   <b>Humidity :  </b>     
+    </td>  
+    <td>
+    {{Src_City_Humidity}} %      
+    </td>  
+    </tr>
+        
+        <tr>
+    <td>
+  <b>Pressure: </b>       
+    </td>  
+    <td>
+    {{Src_City_Pressure}} hPa
+    </td>  
+    </tr>
+        
+        <tr>
+        <td>
+            <img ng-attr-src= "{{Src_Weather_Icon}}">
+            </td>
+        </tr>
+        
+        
+    
+    
+    </table>
+ 
+    
+    
+    
+    <table class="table">
+    
+        <tr>
+    <td>
+   <b> Destination City :</b>      
+    </td>  
+    <td>
+    {{Dest_City_Name}}     
+    </td>  
+    </tr>
+        <tr>
+    <td>
+ <b>Temperature : </b>       
+    </td>  
+    <td>
+    {{Dest_City_Temp}} &#8457    
+    </td>  
+    </tr>
+        
+        <tr>
+    <td>
+   <b>Humidity : </b>      
+    </td>  
+    <td>
+    {{Dest_City_Humidity}} %
+    </td>  
+    </tr>
+        
+        <tr>
+    <td>
+   <b> Pressure:  </b>     
+    </td>  
+    <td>
+    {{Dest_City_Pressure}} hPa   
+    </td>  
+    </tr>
+        
+        <tr>
+        <td>
+            <img ng-attr-src= "{{Dest_Weather_Icon}}">
+            </td>
+        </tr>
+        
+        
+    
+    
+    </table>
+   
+</div>
+
