@@ -1,0 +1,71 @@
+<div align="Right">
+<button ng-click="signOut()" id="signOut" type="button" class="btn btn-link" >Sign Out</button>
+</div>
+
+<form class="form-horizontal">
+
+	
+   <div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Image URI</label>  
+	
+<div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" ng-model="Image_URI" placeholder="Enter the Image URI to Classify" class="form-control input-md">
+  </div>
+	
+<div class="col-md-4">
+    <button id="" name="" class="btn btn-primary" ng-click="classifyImage()">Classify</button> 
+  </div>
+	
+
+
+	
+</div>
+    
+    <div class = "center">
+    <img ng-src= "{{Image_URI}}" class="img-fluid" width="480" height="360" ng-if="Image_URI">
+    </div>
+	</form>
+    
+
+<div class="center">
+		
+	<table ng-if="Celebs"  class="table table-bordered" ng-repeat = "item in Celebs.images[0].faces"> 
+	
+	<tr ng-repeat="(Key,Data) in item.identity"  >
+	<td >{{Key}}</td>
+	<td >{{Data}}</td>
+	</tr>
+		
+	<tr ng-repeat="(Key,Data) in item.gender" >
+	<td>{{Key}}</td>
+	<td>{{Data}}</td>
+	</tr>
+			
+</table>
+
+</div>
+
+<div  >
+
+<table class="table table-bordered" ng-if="tweets">
+	<tr  ng-repeat="t in tweets">
+		<td>
+		 <img ng-src="{{t.user.profile_image_url}}" class="img-circle">
+		</td>
+		<td>
+		 <b> <small>{{t.user.name}}</small> </b> <br>
+		 <span> {{t.text}}</span>
+		</td>
+   </tr>
+</table>
+	
+		
+               
+</div>
+
+
+	
+	
+
+
+

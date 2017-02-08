@@ -1,0 +1,74 @@
+<!doctype html>
+<html ng-app="SplitWise">
+    
+<head >
+ <div class="page-header" >
+    <h2 align="center">Twitter Celebrity</h2>
+</div>
+
+   
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="script/bootstrap-social.css">
+<!--
+<link rel="stylesheet" href="script/script.css">
+-->
+</head>
+   
+<style type="text/css">
+    .left {
+      width:70%;
+      float:left;
+        padding-left: 1cm;
+    }
+    .right {
+      width:30%;
+      float:left;
+        padding-top: 2cm;
+    }
+        
+    .input
+    {
+      width: 200px;
+      vertical-align: middle;
+    }
+	.center {
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+}
+       
+    
+</style>
+   
+<body background ="Images/Intro.jpg" >
+    
+    <div ng-view >
+    
+    </div>
+    
+    
+    
+   <script src="script/angular.js"></script>
+    <script src="script/angular-route.js"></script>
+    <script src="App/Controllers/App.js"></script>
+    <script src="App/Controllers/RegisterController.js"></script>
+    <script src="App/Controllers/LoginController.js"></script>
+    <script src="App/Controllers/IBMController.js"></script>
+  
+    <script src="App/Controllers/HomeController.js"></script>
+    <script src="App/Services/GoogleMapsFactory.js"></script>
+    <script src="App/Services/WeatherFactory.js"></script>
+    <script src="App/Services/IBMFactory.js"></script>
+	<script src="App/Services/TwitterFactory.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH6ltMJQs7XtCWzsSVr_kxDch2M61MF0g?libraries=places&sensor=false"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+   <script src="script/oauth.js"></script>
+    
+    
+</body>
+</html>
+   
+
+   
+    
+ 
