@@ -1,4 +1,4 @@
-package tutorial.maps.google.googlemapsapplication;
+package com.example.googlemaps;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
