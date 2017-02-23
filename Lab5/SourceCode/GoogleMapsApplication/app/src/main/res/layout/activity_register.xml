@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="tutorial.maps.google.googlemapsapplication.register"
+    android:background="#c8009c9a"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.37"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="222dp"
+            android:layout_height="57dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/app"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="FIRST NAME"
+                android:id="@+id/textView"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="Enter First Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="LAST NAME"
+                android:id="@+id/textView2"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:text="Enter Last Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ImageView"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ImageButton"
+                android:src="@drawable/mm"
+                android:cropToPadding="true"
+                android:contextClickable="false"
+                android:visibility="visible"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="#e5ffffff"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0.38">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EMAIL ADDRESS"
+            android:id="@+id/textView3"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:text="Enter Email Address" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="PASSWORD"
+            android:id="@+id/textView4"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:text="Enter Password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="POSTAL ADDRESS"
+            android:id="@+id/textView5"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:text="Enter Postal Address" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:id="@+id/BtnRegister"
+            android:textSize="18sp"
+            android:background="#ffffff"
+            android:layout_margin="5dp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
